@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(27, 26, 26);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.content-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  overflow: hidden;
+  .credits,
+  .credits * {
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    a {
+      font-weight: bold;
+    }
+  }
+  .row {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    div {
+      width: 150px;
+      height: 150px;
+      background-size: 70%;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0px;
+      flex-basis: 50%;
+      &.lg {
+        flex-basis: 100%;
+        width: 300px;
+      }
+    }
+  }
+}
